@@ -1,0 +1,1415 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Md. Mahadi Hasan | WordPress Expert & E-commerce Operations Specialist
+    </title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght=300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght=300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="./image/Favicon.png" />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Plus Jakarta Sans", "sans-serif"],
+              outfit: ["Outfit", "sans-serif"],
+            },
+            colors: {
+              brand: {
+                dark: "#0b0f19",
+                card: "#161c2a",
+                primary: "#2563eb",
+                accent: "#10b981",
+                soft: "#94a3b8",
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @keyframes pulse-slow {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 0.3;
+        }
+        50% {
+          transform: scale(1.05);
+          opacity: 0.5;
+        }
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+      .animate-pulse-slow {
+        animation: pulse-slow 8s infinite ease-in-out;
+      }
+      .animate-float {
+        animation: float 4s infinite ease-in-out;
+      }
+      .gradient-border:hover {
+        border-color: transparent;
+        background-image:
+          linear-gradient(#161c2a, #161c2a),
+          linear-gradient(to right, #2563eb, #10b981);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-brand-dark text-white font-sans overflow-x-hidden antialiased"
+  >
+    <!-- Premium Background Glow Effects -->
+    <div
+      class="absolute top-0 left-0 w-full h-screen overflow-hidden pointer-events-none z-0"
+    >
+      <div
+        class="absolute -top-[20%] -left-[10%] w-[50%] h-[60%] rounded-full bg-blue-900/20 blur-[120px] animate-pulse-slow"
+      ></div>
+      <div
+        class="absolute top-[30%] -right-[10%] w-[40%] h-[50%] rounded-full bg-emerald-900/10 blur-[120px] animate-pulse-slow"
+        style="animation-delay: 2s"
+      ></div>
+    </div>
+    <!-- Navigation Header -->
+    <header
+      class="fixed top-0 left-0 w-full bg-brand-dark/80 backdrop-blur-md border-b border-white/5 z-50"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between"
+      >
+        <span
+          class="text-2xl font-outfit font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-emerald-400"
+        >
+          MAHADI.DEV
+        </span>
+
+        <nav
+          class="hidden md:flex items-center space-x-8 text-sm font-medium text-brand-soft"
+        >
+          <a href="#about" class="hover:text-white transition-colors">About</a>
+          <a href="#cv-section" class="hover:text-white transition-colors"
+            >CV Downloads</a
+          >
+          <a href="#services" class="hover:text-white transition-colors"
+            >Services</a
+          >
+          <a href="#portfolio" class="hover:text-white transition-colors"
+            >Live Sites</a
+          >
+          <a href="#speed" class="hover:text-white transition-colors"
+            >Performance</a
+          >
+          <a href="#catalogs" class="hover:text-white transition-colors"
+            >Gigs & Catalogs</a
+          >
+          <a href="#reviews" class="hover:text-white transition-colors"
+            >Reviews</a
+          >
+        </nav>
+
+        <a
+          href="https://wa.me/8801608581080"
+          target="_blank"
+          class="inline-flex items-center space-x-2 px-4 py-2 text-xs font-bold rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500 hover:text-white transition-all"
+        >
+          <i class="fa-brands fa-whatsapp"></i> <span>Live Chat</span>
+        </a>
+      </div>
+    </header>
+    <!-- Hero Section (অ্যানিমেটেড নাম সহ) -->
+    <section
+      id="about"
+      class="relative min-h-screen pt-32 pb-20 flex items-center z-10"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full"
+      >
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div
+            class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-semibold tracking-wider uppercase"
+          >
+            <span class="w-2 h-2 rounded-full bg-blue-400 animate-ping"></span>
+            <span>Available for Freelance Projects</span>
+          </div>
+
+          <!-- এইখানে নাম টাইপিং অ্যানিমেশন হবে -->
+          <h1
+            class="text-4xl sm:text-5xl lg:text-6xl font-outfit font-extrabold leading-tight min-h-[70px] sm:min-h-[84px] lg:min-h-[90px]"
+          >
+            Hi, I am
+            <span
+              id="typed-text"
+              class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-300"
+            ></span>
+          </h1>
+
+          <p class="text-xl sm:text-2xl font-light text-brand-soft">
+            Skilled
+            <strong class="text-white font-semibold"
+              >WordPress Developer</strong
+            >
+            | Speed, E-commerce Operations & Customer Support Specialist
+          </p>
+
+          <p
+            class="text-base text-brand-soft max-w-2xl mx-auto lg:mx-0 leading-relaxed"
+          >
+            Hello! I am a results-oriented WordPress Developer, Digital
+            Marketer, and E-commerce Specialist with 2+ years of focused
+            experience in creating, optimizing, and managing powerful digital
+            platforms. My core expertise lies in transforming complex business
+            requirements into flawless, secure, and user-friendly WordPress
+            websites. Beyond development, I specialize in driving growth through
+            targeted digital marketing campaigns (including Facebook/Google Ads
+            and SEO) and providing top-tier customer support and email
+            communication to ensure seamless operations and high client
+            retention.
+          </p>
+
+          <!-- Client Message Channels -->
+          <div
+            class="flex flex-wrap justify-center lg:justify-start gap-4 pt-2"
+          >
+            <a
+              href="https://www.upwork.com/freelancers/~016e7b9fed02ed72cf"
+              target="_blank"
+              class="w-12 h-12 rounded-xl bg-brand-card border border-white/5 flex items-center justify-center text-xl text-emerald-400 hover:bg-emerald-500 hover:text-white transition-all shadow-md"
+              title="Message on Upwork"
+              ><i class="fa-brands fa-upwork"></i
+            ></a>
+            <a
+              href="https://www.fiverr.com/sellers/mahadi_wpdev/edit"
+              target="_blank"
+              class="w-12 h-12 rounded-xl bg-brand-card border border-white/5 flex items-center justify-center text-xl hover:bg-green-500 transition-all shadow-md group"
+              title="Message on Fiverr"
+              ><img
+                src="https://cdn.worldvectorlogo.com/logos/fiverr-1.svg"
+                class="w-5 h-5 invert group-hover:invert-0"
+                alt="Fiverr"
+            /></a>
+            <a
+              href="https://www.instagram.com/mahadi.wpdev?igsh=YXdmZjY2b2xzMDJq"
+              target="_blank"
+              class="w-12 h-12 rounded-xl bg-brand-card border border-white/5 flex items-center justify-center text-xl text-pink-400 hover:bg-pink-500 hover:text-white transition-all shadow-md"
+              title="Message on Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://wa.me/8801608581080"
+              target="_blank"
+              class="w-12 h-12 rounded-xl bg-brand-card border border-white/5 flex items-center justify-center text-xl text-emerald-500 hover:bg-emerald-500 hover:text-white transition-all shadow-md"
+              title="Message on WhatsApp"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4"
+          >
+            <a
+              href="https://www.upwork.com/freelancers/~016e7b9fed02ed72cf"
+              target="_blank"
+              class="w-full sm:w-auto px-8 h-14 rounded-xl bg-white text-brand-dark hover:bg-white/90 active:scale-95 transition-all font-bold flex items-center justify-center space-x-2 shadow-xl shadow-white/5"
+            >
+              <span>View My Live Work</span>
+              <i class="fa-solid fa-arrow-right text-sm"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Profile Photo Section -->
+        <div class="lg:col-span-5 flex justify-center relative">
+          <div
+            class="absolute w-72 h-72 rounded-full bg-emerald-500/10 blur-3xl -z-10 animate-pulse-slow"
+          ></div>
+          <div
+            class="relative w-72 h-72 sm:w-80 sm:h-80 rounded-3xl p-1 bg-gradient-to-tr from-blue-600 to-emerald-500 animate-float"
+          >
+            <div
+              class="w-full h-full bg-brand-card rounded-[22px] overflow-hidden relative"
+            >
+              <img
+                src="./image/Md.Mahadi Hasan.png"
+                alt="Md. Mahadi Hasan"
+                class="w-full object-cover object-center"
+              />
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-brand-card/40 backdrop-blur-xs -z-10"
+              >
+                <i class="fa-solid fa-user-tie text-7xl text-blue-500/40"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CV Download Section -->
+    <section
+      id="cv-section"
+      class="py-16 bg-brand-card/50 border-t border-b border-white/5 relative z-10"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <h2 class="text-2xl sm:text-3xl font-outfit font-extrabold">
+            Download My Professional CVs
+          </h2>
+          <p class="text-brand-soft text-sm mt-2">
+            Click to instantly auto-download my specialized service profiles.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <a
+            href="https://drive.google.com/file/d/1CDtRalyyZJx6hBZfvXvsTmtkPTTvxu28/view?usp=sharing"
+            download
+            class="p-6 rounded-2xl bg-brand-card border border-white/5 hover:border-blue-500/40 transition-all flex items-center justify-between group"
+            target="_blank"
+          >
+            <div class="flex items-center space-x-4">
+              <div
+                class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-all"
+              >
+                <i class="fa-solid fa-file-pdf text-xl"></i>
+              </div>
+              <div>
+                <h3
+                  class="font-bold text-lg group-hover:text-blue-400 transition-colors"
+                >
+                  WordPress Developer CV
+                </h3>
+                <p class="text-xs text-brand-soft">Click to download</p>
+              </div>
+            </div>
+            <i
+              class="fa-solid fa-arrow-down text-brand-soft group-hover:text-white group-hover:translate-y-1 transition-all"
+            ></i>
+          </a>
+
+          <a
+            href="https://drive.google.com/file/d/1GkJqNytrkul3qaGjIYAJh5znbTvlY19X/view?usp=sharing"
+            download
+            class="p-6 rounded-2xl bg-brand-card border border-white/5 hover:border-emerald-500/40 transition-all flex items-center justify-between group"
+            target="_blank"
+          >
+            <div class="flex items-center space-x-4">
+              <div
+                class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 group-hover:bg-emerald-600 group-hover:text-white transition-all"
+              >
+                <i class="fa-solid fa-file-pdf text-xl"></i>
+              </div>
+              <div>
+                <h3
+                  class="font-bold text-lg group-hover:text-emerald-400 transition-colors"
+                >
+                  Customer Support CV
+                </h3>
+                <p class="text-xs text-brand-soft">Click to download</p>
+              </div>
+            </div>
+            <i
+              class="fa-solid fa-arrow-down text-brand-soft group-hover:text-white group-hover:translate-y-1 transition-all"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative z-10">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <h2 class="text-3xl sm:text-4xl font-outfit font-extrabold">
+            My Core Service Offerings
+          </h2>
+          <p class="text-brand-soft leading-relaxed">
+            I provide end-to-end development and store management services
+            across the WordPress ecosystem.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="p-8 rounded-2xl bg-brand-card border border-white/5 hover:border-blue-500/40 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group"
+          >
+            <div class="space-y-4">
+              <div
+                class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300"
+              >
+                <i class="fa-solid fa-pen-nib text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold">Custom WordPress Website Design</h3>
+              <p class="text-brand-soft text-sm leading-relaxed">
+                Building unique, responsive, and pixel-perfect WordPress themes
+                from scratch, based on custom design files (Figma, Adobe XD,
+                etc.) using Elementor Pro.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="p-8 rounded-2xl bg-brand-card border border-white/5 hover:border-emerald-500/40 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group"
+          >
+            <div class="space-y-4">
+              <div
+                class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 group-hover:bg-emerald-600 group-hover:text-white transition-all duration-300"
+              >
+                <i class="fa-solid fa-cart-shopping text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold">WooCommerce Dev & Operations</h3>
+              <p class="text-brand-soft text-sm leading-relaxed">
+                Full setup, customization, and optimization of WooCommerce
+                stores, including secure payment gateway integration and
+                advanced product inventory management.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="p-8 rounded-2xl bg-brand-card border border-white/5 hover:border-indigo-500/40 hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between group"
+          >
+            <div class="space-y-4">
+              <div
+                class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300"
+              >
+                <i class="fa-solid fa-headset text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold">E-commerce Customer Support</h3>
+              <p class="text-brand-soft text-sm leading-relaxed">
+                Providing top-tier customer service, managing support inboxes
+                (Zendesk, Intercom, Gorgias), handling order inquiries, refunds,
+                and maintaining a warm brand tone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Live Websites Section (ইমেজ থাম্বনেইল এবং এক্সপ্যান্ড অপশন সহ) -->
+    <section
+      id="portfolio"
+      class="py-24 bg-brand-card/30 border-t border-white/5 relative z-10"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl sm:text-4xl font-outfit font-extrabold">
+            Live Client Platforms
+          </h2>
+          <p class="text-brand-soft text-sm mt-2">
+            Real websites launched and optimized. Click to open live link.
+          </p>
+        </div>
+        <!-- প্রজেক্ট গ্রিড -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Site 1 -->
+          <a
+            href="https://peptixbio.com/"
+            target="_blank"
+            class="block p-4 rounded-2xl bg-brand-card border border-white/5 hover:border-blue-500/40 transition-all group"
+          >
+            <div
+              class="w-full h-48 rounded-xl border border-white/5 overflow-hidden mb-4 relative bg-slate-800"
+            >
+              <img
+                src="./image/PeptixBio.png"
+                alt="PeptixBio"
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span
+                  class="px-4 py-2 rounded-lg bg-blue-600 text-xs font-bold shadow-lg"
+                  >Visit Live Site
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"
+                  ></i
+                ></span>
+              </div>
+            </div>
+            <div class="px-2">
+              <h3
+                class="font-bold text-lg group-hover:text-blue-400 transition-colors"
+              >
+                PeptixBio
+              </h3>
+              <p class="text-xs text-brand-soft mt-1">
+                Professional WordPress E-commerce Site | Bio-Tech Brand
+              </p>
+            </div>
+          </a>
+          <!-- Site 2 -->
+          <a
+            href="https://viggopack.dk/"
+            target="_blank"
+            class="block p-4 rounded-2xl bg-brand-card border border-white/5 hover:border-emerald-500/40 transition-all group"
+          >
+            <div
+              class="w-full h-48 rounded-xl border border-white/5 overflow-hidden mb-4 relative bg-slate-800"
+            >
+              <img
+                src="./image/Vigo Pack.png"
+                alt="Vigo Pack"
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span
+                  class="px-4 py-2 rounded-lg bg-emerald-600 text-xs font-bold shadow-lg"
+                  >Visit Live Site
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"
+                  ></i
+                ></span>
+              </div>
+            </div>
+            <div class="px-2">
+              <h3
+                class="font-bold text-lg group-hover:text-emerald-400 transition-colors"
+              >
+                Vigopack
+              </h3>
+              <p class="text-xs text-brand-soft mt-1">
+                Corporate WordPress Website Development for Packaging Solutions
+              </p>
+            </div>
+          </a>
+          <!-- Site 3 -->
+          <a
+            href="https://marketplacestr.com/"
+            target="_blank"
+            class="block p-4 rounded-2xl bg-brand-card border border-white/5 hover:border-amber-500/40 transition-all group"
+          >
+            <div
+              class="w-full h-48 rounded-xl border border-white/5 overflow-hidden mb-4 relative bg-slate-800"
+            >
+              <img
+                src="./image/Marketplace STR.png"
+                alt="RKB Plumbing"
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span
+                  class="px-4 py-2 rounded-lg bg-amber-500 text-brand-dark text-xs font-bold shadow-lg"
+                  >Visit Live Site
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"
+                  ></i
+                ></span>
+              </div>
+            </div>
+            <div class="px-2">
+              <h3
+                class="font-bold text-lg group-hover:text-amber-400 transition-colors"
+              >
+                Marketplace STR
+              </h3>
+              <p class="text-xs text-brand-soft mt-1">
+                Professional Business Marketplace Website Development
+                (WordPress)
+              </p>
+            </div>
+          </a>
+          <!-- অতিরিক্ত প্রজেক্টস -->
+          <!-- Site 4 -->
+          <a
+            href="https://unimarkfashion.com/"
+            target="_blank"
+            class="extra-project hidden block p-4 rounded-2xl bg-brand-card border border-white/5 hover:border-purple-500/40 transition-all group opacity-0 translate-y-4 duration-500"
+          >
+            <div
+              class="w-full h-48 rounded-xl border border-white/5 overflow-hidden mb-4 relative bg-slate-800"
+            >
+              <img
+                src="./image/Unimarkfashion.png"
+                alt="Unimarkfashion"
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span
+                  class="px-4 py-2 rounded-lg bg-purple-600 text-xs font-bold shadow-lg"
+                  >Visit Live Site
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"
+                  ></i
+                ></span>
+              </div>
+            </div>
+            <div class="px-2">
+              <h3
+                class="font-bold text-lg group-hover:text-purple-400 transition-colors"
+              >
+                UNI Mark Fashion
+              </h3>
+              <p class="text-xs text-brand-soft mt-1">
+                Modern WordPress WooCommerce E-commerce Store for Fashion Brand
+              </p>
+            </div>
+          </a>
+          <!-- Site 5 -->
+          <a
+            href="https://www.thekadahub.com/"
+            target="_blank"
+            class="extra-project hidden block p-4 rounded-2xl bg-brand-card border border-white/5 hover:border-pink-500/40 transition-all group opacity-0 translate-y-4 duration-500"
+          >
+            <div
+              class="w-full h-48 rounded-xl border border-white/5 overflow-hidden mb-4 relative bg-slate-800"
+            >
+              <img
+                src="./image/Thekadahub.png"
+                alt="Thekadahub"
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span
+                  class="px-4 py-2 rounded-lg bg-pink-600 text-xs font-bold shadow-lg"
+                  >Visit Live Site
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"
+                  ></i
+                ></span>
+              </div>
+            </div>
+            <div class="px-2">
+              <h3
+                class="font-bold text-lg group-hover:text-pink-400 transition-colors"
+              >
+                The Kada Hub
+              </h3>
+              <p class="text-xs text-brand-soft mt-1">
+                The Kada Hub — WooCommerce E-commerce Jewelry Store
+                Customization
+              </p>
+            </div>
+          </a>
+          <!-- Site 6 -->
+          <a
+            href="https://www.vwlcorp.com/"
+            target="_blank"
+            class="extra-project hidden block p-4 rounded-2xl bg-brand-card border border-white/5 hover:border-indigo-500/40 transition-all group opacity-0 translate-y-4 duration-500"
+          >
+            <div
+              class="w-full h-48 rounded-xl border border-white/5 overflow-hidden mb-4 relative bg-slate-800"
+            >
+              <img
+                src="./image/VWLcorp.png"
+                alt="Project 6"
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span
+                  class="px-4 py-2 rounded-lg bg-indigo-600 text-xs font-bold shadow-lg"
+                  >Visit Live Site
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"
+                  ></i
+                ></span>
+              </div>
+            </div>
+            <div class="px-2">
+              <h3
+                class="font-bold text-lg group-hover:text-indigo-400 transition-colors"
+              >
+                VWLcorp
+              </h3>
+              <p class="text-xs text-brand-soft mt-1">
+                VWLcorp - Logistics & Transportation WordPress Website
+                Customization
+              </p>
+            </div>
+          </a>
+          <!-- Site 7 -->
+          <a
+            href="https://www.mugnee.com/"
+            target="_blank"
+            class="extra-project hidden block p-4 rounded-2xl bg-brand-card border border-white/5 hover:border-indigo-500/40 transition-all group opacity-0 translate-y-4 duration-500"
+          >
+            <div
+              class="w-full h-48 rounded-xl border border-white/5 overflow-hidden mb-4 relative bg-slate-800"
+            >
+              <img
+                src="./image/Mugnee.png"
+                alt="Project 6"
+                class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-brand-dark/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
+              >
+                <span
+                  class="px-4 py-2 rounded-lg bg-indigo-600 text-xs font-bold shadow-lg"
+                  >Visit Live Site
+                  <i
+                    class="fa-solid fa-arrow-up-right-from-square ml-1 text-[10px]"
+                  ></i
+                ></span>
+              </div>
+            </div>
+            <div class="px-2">
+              <h3
+                class="font-bold text-lg group-hover:text-indigo-400 transition-colors"
+              >
+                Mugnee
+              </h3>
+              <p class="text-xs text-brand-soft mt-1">
+                Large-Scale WooCommerce WordPress E-commerce Store
+              </p>
+            </div>
+          </a>
+        </div>
+        <!-- কন্ট্রোল বাটন -->
+        <div class="mt-12 text-center">
+          <button
+            id="show-more-btn"
+            class="inline-flex items-center space-x-2 px-6 py-3 rounded-xl bg-white/5 border border-white/10 text-sm font-semibold hover:bg-white hover:text-brand-dark transition-all group shadow-md cursor-pointer"
+          >
+            <span id="btn-text">See All 10+ Live Projects</span>
+            <i
+              id="btn-icon"
+              class="fa-solid fa-arrow-down text-xs group-hover:translate-y-1 transition-transform"
+            ></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Speed & Performance Section -->
+    <section id="speed" class="py-24 relative z-10 border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 space-y-6">
+            <h2
+              class="text-3xl sm:text-4xl font-outfit font-extrabold leading-tight"
+            >
+              I Turn Slow Websites into
+              <span
+                class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300"
+                >Conversion Engines</span
+              >
+            </h2>
+            <p class="text-brand-soft leading-relaxed">
+              A delay of just 1 second can drop your conversion rates by up to
+              20%. I specialize in taking bloated WordPress sites and cleaning
+              their database, minimizing CSS/JS, and optimizing media pipelines.
+            </p>
+
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-sm font-semibold mb-1">
+                  <span>Typical WordPress Site Load Speed (Before)</span>
+                  <span class="text-red-400">5.2 Seconds</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-white/5">
+                  <div
+                    class="h-full rounded-full bg-red-500"
+                    style="width: 80%"
+                  ></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between text-sm font-semibold mb-1">
+                  <span>After My Optimization (Core Web Vitals Pass)</span>
+                  <span class="text-emerald-400">1.4 Seconds</span>
+                </div>
+                <div class="w-full h-2 rounded-full bg-white/5">
+                  <div
+                    class="h-full rounded-full bg-emerald-400"
+                    style="width: 25%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 flex justify-center">
+            <div
+              class="w-full max-w-md bg-brand-card rounded-2xl p-8 border border-white/5 shadow-2xl relative overflow-hidden"
+            >
+              <div
+                class="absolute -right-4 -top-4 w-24 h-24 rounded-full bg-emerald-500/10 blur-xl"
+              ></div>
+              <h3 class="text-lg font-bold mb-6 flex items-center space-x-2">
+                <i class="fa-solid fa-gauge-high text-emerald-400"></i>
+                <span>Real GTmetrix Goals Achieved</span>
+              </h3>
+
+              <div class="grid grid-cols-2 gap-4">
+                <div
+                  class="p-4 rounded-xl bg-white/5 border border-white/5 text-center"
+                >
+                  <span class="text-4xl font-extrabold text-emerald-400"
+                    >A</span
+                  >
+                  <p class="text-xs text-brand-soft mt-1">GTmetrix Grade</p>
+                </div>
+                <div
+                  class="p-4 rounded-xl bg-white/5 border border-white/5 text-center"
+                >
+                  <span class="text-4xl font-extrabold text-emerald-400"
+                    >99%</span
+                  >
+                  <p class="text-xs text-brand-soft mt-1">Performance Score</p>
+                </div>
+                <div
+                  class="p-4 rounded-xl bg-white/5 border border-white/5 text-center"
+                >
+                  <span class="text-4xl font-extrabold text-emerald-400"
+                    >97%</span
+                  >
+                  <p class="text-xs text-brand-soft mt-1">Structure Score</p>
+                </div>
+                <div
+                  class="p-4 rounded-xl bg-white/5 border border-white/5 text-center"
+                >
+                  <span class="text-4xl font-extrabold text-emerald-400"
+                    >&lt;1.5s</span
+                  >
+                  <p class="text-xs text-brand-soft mt-1">LCP Load Speed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fiverr Gigs & Upwork Project Catalog Section -->
+    <section id="catalogs" class="py-24 relative z-10 border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl sm:text-4xl font-outfit font-extrabold">
+            Marketplace Gigs & Project Catalogs
+          </h2>
+          <p class="text-brand-soft text-sm mt-2">
+            Explore my ready-made service packages listed on Fiverr and Upwork.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="bg-brand-card rounded-2xl overflow-hidden border border-white/5 hover:border-blue-500/30 transition-all"
+          >
+            <div class="h-40 bg-slate-800 relative">
+              <img
+                src="./image/Customer Support.png"
+                alt="Customer Support Catalog"
+                class="w-full h-full object-cover"
+              />
+              <span
+                class="absolute top-3 left-3 bg-emerald-500 text-brand-dark text-[10px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider"
+                >Upwork Catalog</span
+              >
+            </div>
+            <div class="p-4 space-y-3">
+              <h4 class="font-bold text-sm line-clamp-2">
+                I will provide Zendesk and Gorgias customer support virtual
+                assistant
+              </h4>
+              <a
+                href="https://www.upwork.com/services/product/admin-customer-support-professional-ecommerce-customer-support-and-order-management-services-2071168342343443375?ref=fl_profile"
+                target="_blank"
+                class="block text-center w-full py-2 rounded-lg bg-white/5 hover:bg-blue-600 text-xs font-semibold transition-all"
+                >Order Package</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-brand-card rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all"
+          >
+            <div class="h-40 bg-slate-800 relative">
+              <img
+                src="./image/online store.png"
+                alt="WooCommerce Gig"
+                class="w-full h-full object-cover"
+              />
+              <span
+                class="absolute top-3 left-3 bg-green-500 text-brand-dark text-[10px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider"
+                >Fiverr Gig</span
+              >
+            </div>
+            <div class="p-4 space-y-3">
+              <h4 class="font-bold text-sm line-clamp-2">
+                I will get a modern wordpress ecommerce store with secure
+                payments
+              </h4>
+              <a
+                href="https://www.fiverr.com/mahadi_wpdev/get-a-modern-wordpress-ecommerce-store-with-secure-payments"
+                target="_blank"
+                class="block text-center w-full py-2 rounded-lg bg-white/5 hover:bg-green-600 text-xs font-semibold transition-all"
+                >View on Fiverr</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-brand-card rounded-2xl overflow-hidden border border-white/5 hover:border-blue-500/30 transition-all"
+          >
+            <div class="h-40 bg-slate-800 relative">
+              <img
+                src="./image/Landing Page.jpg"
+                alt="Landing Page Catalog"
+                class="w-full h-full object-cover"
+              />
+              <span
+                class="absolute top-3 left-3 bg-emerald-500 text-brand-dark text-[10px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider"
+                >Upwork Catalog</span
+              >
+            </div>
+            <div class="p-4 space-y-3">
+              <h4 class="font-bold text-sm line-clamp-2">
+                I will get a high converting landing page using Elementor
+              </h4>
+              <a
+                href="https://www.upwork.com/services/product/development-it-a-high-converting-landing-page-using-elementor-1990067079945774568?ref=fl_profile"
+                target="_blank"
+                class="block text-center w-full py-2 rounded-lg bg-white/5 hover:bg-blue-600 text-xs font-semibold transition-all"
+                >Order Package</a
+              >
+            </div>
+          </div>
+
+          <div
+            class="bg-brand-card rounded-2xl overflow-hidden border border-white/5 hover:border-green-500/30 transition-all"
+          >
+            <div class="h-40 bg-slate-800 relative">
+              <img
+                src="./image/multilingual website.png"
+                alt="multilingual website Gig"
+                class="w-full h-full object-cover"
+              />
+              <span
+                class="absolute top-3 left-3 bg-green-500 text-brand-dark text-[10px] font-extrabold px-2 py-0.5 rounded uppercase tracking-wider"
+                >Fiverr Gig</span
+              >
+            </div>
+            <div class="p-4 space-y-3">
+              <h4 class="font-bold text-sm line-clamp-2">
+                I will create a professional multilingual wordpress website
+              </h4>
+              <a
+                href="https://www.fiverr.com/mahadi_wpdev/create-a-professional-multilingual-wordpress-website"
+                target="_blank"
+                class="block text-center w-full py-2 rounded-lg bg-white/5 hover:bg-green-600 text-xs font-semibold transition-all"
+                >View on Fiverr</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Digital Marketing & Certification Section -->
+    <section
+      id="digital-marketing"
+      class="py-24 relative z-10 border-t border-white/5"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+          <h2 class="text-3xl sm:text-4xl font-outfit font-extrabold">
+            Digital Marketing
+            <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400"
+              >Expertise</span
+            >
+          </h2>
+          <p class="text-brand-soft leading-relaxed">
+            Combining technical WordPress development with data-driven marketing
+            strategies to scale business growth.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <!-- Left: Certification Card -->
+          <div class="lg:col-span-5">
+            <div
+              class="p-8 rounded-2xl bg-gradient-to-b from-brand-card to-brand-dark border border-blue-500/20 shadow-xl relative overflow-hidden group"
+            >
+              <div
+                class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-blue-500/10 blur-xl group-hover:bg-blue-500/20 transition-all"
+              ></div>
+
+              <div class="flex items-center space-x-4 mb-6">
+                <div
+                  class="w-14 h-14 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 text-2xl"
+                >
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div>
+                  <span
+                    class="text-xs font-bold uppercase tracking-wider text-blue-400"
+                    >Verified Credentials</span
+                  >
+                  <h3 class="text-xl font-outfit font-bold text-white mt-0.5">
+                    Professional Certification
+                  </h3>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="p-4 rounded-xl bg-white/5 border border-white/5">
+                  <h4 class="font-bold text-white text-base">
+                    Digital Marketing – Level 4
+                  </h4>
+                  <p class="text-xs text-emerald-400 font-semibold mt-1">
+                    Status: Fully Completed
+                  </p>
+                </div>
+
+                <div class="space-y-1">
+                  <p
+                    class="text-xs text-brand-soft uppercase font-semibold tracking-wider"
+                  >
+                    Issued By
+                  </p>
+                  <p class="text-sm text-white font-medium">
+                    ICDS – Integrated Community Development Society
+                  </p>
+                </div>
+
+                <p
+                  class="text-xs text-brand-soft leading-relaxed pt-2 border-t border-white/5"
+                >
+                  This Level 4 certification validates advanced expertise in
+                  paid advertising structures, data analytics, and strategic
+                  lead generation frameworks.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Marketing Skills Grid -->
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Skill 1: Facebook Ads -->
+            <div
+              class="p-5 rounded-xl bg-brand-card border border-white/5 flex items-start space-x-4 hover:border-blue-500/30 transition-all"
+            >
+              <div class="text-blue-400 text-lg mt-0.5">
+                <i class="fa-brands fa-facebook-f w-5 text-center"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-white">
+                  Facebook Ads Campaign
+                </h4>
+                <p class="text-xs text-brand-soft mt-1">
+                  Targeted ad setups, pixel tracking, and custom audience
+                  scaling.
+                </p>
+              </div>
+            </div>
+
+            <!-- Skill 2: Google Ads -->
+            <div
+              class="p-5 rounded-xl bg-brand-card border border-white/5 flex items-start space-x-4 hover:border-blue-500/30 transition-all"
+            >
+              <div class="text-red-400 text-lg mt-0.5">
+                <i class="fa-brands fa-google w-5 text-center"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-white">
+                  Google Ads Campaign
+                </h4>
+                <p class="text-xs text-brand-soft mt-1">
+                  Search, Display, and Performance Max setups for conversions.
+                </p>
+              </div>
+            </div>
+
+            <!-- Skill 3: GMB Profile -->
+            <div
+              class="p-5 rounded-xl bg-brand-card border border-white/5 flex items-start space-x-4 hover:border-blue-500/30 transition-all"
+            >
+              <div class="text-emerald-400 text-lg mt-0.5">
+                <i class="fa-solid fa-map-location-dot w-5 text-center"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-white">
+                  GMB Profile Optimization
+                </h4>
+                <p class="text-xs text-brand-soft mt-1">
+                  Google My Business setup to dominate local map searches.
+                </p>
+              </div>
+            </div>
+
+            <!-- Skill 4: Google Analytics -->
+            <div
+              class="p-5 rounded-xl bg-brand-card border border-white/5 flex items-start space-x-4 hover:border-blue-500/30 transition-all"
+            >
+              <div class="text-amber-400 text-lg mt-0.5">
+                <i class="fa-solid fa-chart-line w-5 text-center"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-white">
+                  Google Analytics (GA4)
+                </h4>
+                <p class="text-xs text-brand-soft mt-1">
+                  Tracking user behavior, event goals, and e-commerce data.
+                </p>
+              </div>
+            </div>
+
+            <!-- Skill 5: Google Search Console -->
+            <div
+              class="p-5 rounded-xl bg-brand-card border border-white/5 flex items-start space-x-4 hover:border-blue-500/30 transition-all"
+            >
+              <div class="text-indigo-400 text-lg mt-0.5">
+                <i
+                  class="fa-solid fa-magnifying-glass-chart w-5 text-center"
+                ></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-white">
+                  Google Search Console
+                </h4>
+                <p class="text-xs text-brand-soft mt-1">
+                  Indexing management, sitemaps, and monitoring organic ranking.
+                </p>
+              </div>
+            </div>
+
+            <!-- Skill 6: YouTube SEO -->
+            <div
+              class="p-5 rounded-xl bg-brand-card border border-white/5 flex items-start space-x-4 hover:border-blue-500/30 transition-all"
+            >
+              <div class="text-red-500 text-lg mt-0.5">
+                <i class="fa-brands fa-youtube w-5 text-center"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-white">
+                  YouTube Video Optimization
+                </h4>
+                <p class="text-xs text-brand-soft mt-1">
+                  Keywords, descriptions, tags, and SEO for video visibility.
+                </p>
+              </div>
+            </div>
+
+            <!-- Skill 7: Email Marketing -->
+            <div
+              class="p-5 rounded-xl bg-brand-card border border-white/5 flex items-start space-x-4 hover:border-blue-500/30 transition-all"
+            >
+              <div class="text-teal-400 text-lg mt-0.5">
+                <i class="fa-solid fa-envelope-open-text w-5 text-center"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-white">Email Marketing</h4>
+                <p class="text-xs text-brand-soft mt-1">
+                  Automated newsletters, drip campaigns, and lead nurturing.
+                </p>
+              </div>
+            </div>
+
+            <!-- Skill 8: B2B Lead Gen -->
+            <div
+              class="p-5 rounded-xl bg-brand-card border border-white/5 flex items-start space-x-4 hover:border-blue-500/30 transition-all"
+            >
+              <div class="text-purple-400 text-lg mt-0.5">
+                <i class="fa-solid fa-users-viewfinder w-5 text-center"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-white">
+                  B2B Lead Generation
+                </h4>
+                <p class="text-xs text-brand-soft mt-1">
+                  Finding verified client leads, emails, and data scraping.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Upwork Reviews Section (Updated with Real Client Feedback) -->
+    <section
+      id="reviews"
+      class="py-24 bg-brand-card/20 border-t border-b border-white/5 relative z-10"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl sm:text-4xl font-outfit font-extrabold">
+            Upwork Verified Feedback
+          </h2>
+          <p class="text-brand-soft text-sm mt-2">
+            What global clients and website owners say about my work.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <!-- Review 1: Website translation issues fix -->
+          <div
+            class="p-6 rounded-2xl bg-brand-card border border-white/5 space-y-4 flex flex-col justify-between"
+          >
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="flex text-amber-400 text-sm gap-1">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <span
+                  class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded"
+                  ><i class="fa-brands fa-upwork"></i> Verified</span
+                >
+              </div>
+              <p class="text-brand-soft text-sm italic leading-relaxed">
+                "Great work from Mahadi. Was quick and efficient."
+              </p>
+            </div>
+            <div
+              class="text-xs font-bold text-white pt-2 border-t border-white/5"
+            >
+              — Website Translation Issues Fix
+            </div>
+          </div>
+
+          <!-- Review 2: Web Design -->
+          <div
+            class="p-6 rounded-2xl bg-brand-card border border-white/5 space-y-4 flex flex-col justify-between"
+          >
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="flex text-amber-400 text-sm gap-1">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <span
+                  class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded"
+                  ><i class="fa-brands fa-upwork"></i> Verified</span
+                >
+              </div>
+              <p class="text-brand-soft text-sm italic leading-relaxed">
+                "Thank you very much for your support!"
+              </p>
+            </div>
+            <div
+              class="text-xs font-bold text-white pt-2 border-t border-white/5"
+            >
+              — Web Design (Hourly Contract)
+            </div>
+          </div>
+
+          <!-- Review 3: blog editing in my WP -->
+          <div
+            class="p-6 rounded-2xl bg-brand-card border border-white/5 space-y-4 flex flex-col justify-between"
+          >
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="flex text-amber-400 text-sm gap-1">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <span
+                  class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded"
+                  ><i class="fa-brands fa-upwork"></i> Verified</span
+                >
+              </div>
+              <p class="text-brand-soft text-sm italic leading-relaxed">
+                "great work"
+              </p>
+            </div>
+            <div
+              class="text-xs font-bold text-white pt-2 border-t border-white/5"
+            >
+              — Blog Editing in WordPress
+            </div>
+          </div>
+
+          <!-- Review 4: Customer Support Email Assistant -->
+          <div
+            class="p-6 rounded-2xl bg-brand-card border border-white/5 space-y-4 flex flex-col justify-between"
+          >
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="flex text-amber-400 text-sm gap-1">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="text-white/20 fa-solid fa-star"></i>
+                </div>
+                <span
+                  class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded"
+                  ><i class="fa-brands fa-upwork"></i> Verified</span
+                >
+              </div>
+              <p class="text-brand-soft text-sm italic leading-relaxed">
+                Long-term contract asset: Contributed 73+ hours of dedicated
+                customer support and email operations for an E-commerce brand.
+              </p>
+            </div>
+            <div
+              class="text-xs font-bold text-white pt-2 border-t border-white/5"
+            >
+              — Customer Support Email Assistant
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Contact Section -->
+    <footer
+      id="contact"
+      class="bg-brand-card border-t border-white/5 pt-20 pb-12 relative z-10"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16 border-b border-white/5"
+        >
+          <div class="lg:col-span-5 space-y-6">
+            <h2
+              class="text-3xl font-outfit font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-300"
+            >
+              Let's Partner on Your Project
+            </h2>
+            <p class="text-brand-soft leading-relaxed max-w-md">
+              Whether you need a high-converting store setup, a technical expert
+              to rescue a slow site, or daily store support management, I will
+              ensure your investment is a success.
+            </p>
+
+            <div class="space-y-4 font-medium text-sm text-brand-soft">
+              <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-envelope text-blue-400"></i>
+                <span>mahedihasan81080@gmail.com</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-location-dot text-emerald-400"></i>
+                <span>Bhola-8300, Barishal, Bangladesh</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7">
+            <div
+              class="p-8 rounded-2xl bg-brand-dark border border-white/5 space-y-6 text-center lg:text-left"
+            >
+              <h3 class="text-xl font-bold">
+                Instantly Message Me Across Any Channel
+              </h3>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <a
+                  href="https://www.upwork.com/freelancers/~016e7b9fed02ed72cf"
+                  target="_blank"
+                  class="py-3 rounded-xl bg-white/5 border border-white/5 text-center text-xs font-bold hover:bg-emerald-600 transition-colors block"
+                  ><i class="fa-brands fa-upwork text-emerald-400 mr-1"></i>
+                  Upwork</a
+                >
+                <a
+                  href="https://www.fiverr.com/sellers/mahadi_wpdev/edit"
+                  target="_blank"
+                  class="py-3 rounded-xl bg-white/5 border border-white/5 text-center text-xs font-bold hover:bg-green-600 transition-colors block"
+                  ><i
+                    class="fa-solid fa-circle text-green-400 mr-1 text-[8px]"
+                  ></i>
+                  Fiverr</a
+                >
+                <a
+                  href="https://wa.me/8801608581080"
+                  target="_blank"
+                  class="py-3 rounded-xl bg-white/5 border border-white/5 text-center text-xs font-bold hover:bg-emerald-500 transition-colors block"
+                  ><i class="fa-brands fa-whatsapp text-emerald-400 mr-1"></i>
+                  WhatsApp</a
+                >
+                <a
+                  href="https://www.instagram.com/mahadi.wpdev?igsh=YXdmZjY2b2xzMDJq"
+                  target="_blank"
+                  class="py-3 rounded-xl bg-white/5 border border-white/5 text-center text-xs font-bold hover:bg-pink-600 transition-colors block"
+                  ><i class="fa-brands fa-instagram text-pink-400 mr-1"></i>
+                  Instagram</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-8 text-center text-xs text-brand-soft">
+          <span>&copy; 2026 Md. Mahadi Hasan. All Rights Reserved.</span>
+        </div>
+      </div>
+    </footer>
+    <!-- Name Animation Plugin Dependencies -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Typed("#typed-text", {
+          strings: [
+            "Md. Mahadi Hasan",
+            "WordPress Developer",
+            "E-commerce Specialist",
+          ],
+          typeSpeed: 80,
+          backSpeed: 60,
+          backDelay: 3000,
+          loop: true,
+          cursorChar: "|",
+        });
+      });
+
+      document
+        .getElementById("show-more-btn")
+        .addEventListener("click", function () {
+          const extraProjects = document.querySelectorAll(".extra-project");
+          const btnText = document.getElementById("btn-text");
+          const btnIcon = document.getElementById("btn-icon");
+
+          if (extraProjects[0].classList.contains("hidden")) {
+            extraProjects.forEach((project) => {
+              project.classList.remove("hidden");
+              setTimeout(() => {
+                project.classList.remove("opacity-0", "translate-y-4");
+              }, 50);
+            });
+            btnText.textContent = "Show Less Projects";
+            btnIcon.classList.replace("fa-arrow-down", "fa-arrow-up");
+          } else {
+            extraProjects.forEach((project) => {
+              project.classList.add("opacity-0", "translate-y-4");
+              setTimeout(() => {
+                project.classList.add("hidden");
+              }, 400);
+            });
+            btnText.textContent = "See All 10+ Live Projects";
+            btnIcon.classList.replace("fa-arrow-up", "fa-arrow-down");
+          }
+        });
+    </script>
+  </body>
+</html>
